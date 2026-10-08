@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(rgba(21, 20, 70, 0.926), rgba(21, 20, 70, 0.9)), url('https://www.projectorreviews.com/wp-content/uploads/2026/04/Avatar.jpg') ;
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 996px;
+    margin: 0 auto;
+    
+}
+header ul{
+    display: flex;
+    height: 78px;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo-color{
+    color: #f5c518;
+}
+
+.title{
+    font-size: 28;
+    color: white;
+    margin: 2rem 0;
+}
+.title-color{
+    color: #f5c518;
+    
+}
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    row-gap: 10px;
+}
+.movie-container .movie-card{
+    position: relative;
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #41317a;
+    padding: 5px;
+    border-radius: 5px;
+}
+.movie-container .movie-card img{
+    max-height: 400px;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+.movie-container .movie-card .info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.movie-container .movie-card .movie-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+.movie-container .movie-card .counts{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.vote-average{
+    background-color: #f5c518;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 500;
+    color: white;
+
+}
+.release-date{
+    background-color: #f5c518;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 400;
+    color: white;    
+}
+
+
